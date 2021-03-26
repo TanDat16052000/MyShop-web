@@ -1,0 +1,72 @@
+.header {
+    height: 119px;
+    background-image: linear-gradient(0, #ff6633, #f63e2e);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 34px;
+}
+
+.navbar__list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.navbar__item {
+    display: inline-block;
+    padding-left:7px;
+    padding-right: 7px;
+    position: relative;
+}
+
+.navbar__item,
+.navbar__item-link {
+    font-size: 1.4rem;
+    font-weight: 400;
+    text-decoration: none;
+    color: var(--text-color);
+    display:inline-flex;
+    align-items: center;
+}
+
+.navbar__list .strong {
+    font-weight: 500;
+}
+
+.navbar__list .separate2px::after {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 15px;
+    border-right: 2px solid #f96c5c;
+    right:-2px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.navbar__list .separate1px::after {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 12px;
+    border-left: 1px solid #fa8f82;
+    right: -1px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.navbar__item-link:hover{
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.navbar__item-link i{
+    font-size: 1.6rem;
+    padding-left: 7px;
+    padding-right: 7px;
+}
+.navbar__item-link .fa-instagram{
+    font-size:1.8rem;
+    padding-left:3px;
+}

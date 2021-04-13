@@ -2,6 +2,7 @@
     --text-color: #fff;
     --black-color: #000;
     --white-color: white;
+    --primary-color: #ff6633;
 }
 
 * {
@@ -22,6 +23,17 @@ html {
     line-height: 1.6rem;
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
+}
+
+button {
+    outline: none;
+    cursor: pointer;
+}
+
+button.disabled {
+    color: #949494;
+    background-color: #c3c3c3c3;
+    cursor: default;
 }
 
 .grid {
@@ -47,4 +59,19 @@ html {
     to {
         opacity: 1;
     }
+}
+
+.btn {
+    min-width: 142px;
+    height: 36px;
+    border: none;
+    font-size: 1.5rem;
+    padding: 0;
+    text-align: center;
+    color: #363535;
+}
+
+.btn.primary {
+    background-color: var(--primary-color);
+    color: var(--white-color);
 }

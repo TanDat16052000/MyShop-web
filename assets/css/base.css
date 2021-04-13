@@ -1,19 +1,22 @@
 :root {
     --text-color: #fff;
     --black-color: #000;
-    --white-color:white;
+    --white-color: white;
 }
 
 * {
     box-sizing: inherit;
 }
-*{
-    height:inherit;
+
+* {
+    height: inherit;
 }
-*{
+
+* {
     margin: 0;
     padding: 0;
 }
+
 html {
     font-size: 62.5%;
     line-height: 1.6rem;
@@ -34,4 +37,14 @@ html {
 .grid__row {
     display: flex;
     flex-wrap: wrap;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }

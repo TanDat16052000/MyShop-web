@@ -507,14 +507,14 @@
     top:var(--header-height);
     left: 0;
     right: 0;
-    height: var(--header-height);
-    background-color:olivedrab;
+    height: calc(5 * var(--header-height));
+    background-color:var(--white-color);
 }
 .footer{
     position: relative;
     top:var(--header-height);
     left: 0;
     right: 0;
-    height: var(--header-height);
+    height: calc(2 * var(--header-height));
     background-color:yellow;
 }

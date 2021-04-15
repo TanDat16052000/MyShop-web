@@ -6,6 +6,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>ShopMy</title>
+    <link rel="icon" href="./assets/img/icon_logo.png">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/normalize.min.css">
@@ -70,16 +71,23 @@
                             Hỗ Trợ
                         </a>
                     </li>
-                    <li class="navbar__item separate1px display-modal">
-                        <div href="" class="navbar__item-link strong ">
-                            <i class="fas fa-user-alt"></i>
-                            Đăng Nhập
-                        </div>
-                    </li>
-                    <li class="navbar__item display-modal">
-                        <div href="" class="navbar__item-link strong">
-                            <i class="fas fa-user-plus"></i>
-                            Đăng Ký
+                    <!--                    <li class="navbar__item separate1px display-modal">-->
+                    <!--                        <div class="navbar__item-link strong ">-->
+                    <!--                            <i class="fas fa-user-alt"></i>-->
+                    <!--                            Đăng Nhập-->
+                    <!--                        </div>-->
+                    <!--                    </li>-->
+                    <!--                    <li class="navbar__item display-modal">-->
+                    <!--                        <div class="navbar__item-link strong">-->
+                    <!--                            <i class="fas fa-user-plus"></i>-->
+                    <!--                            Đăng Ký-->
+                    <!--                        </div>-->
+                    <!--                    </li>-->
+                    <li class="navbar__item">
+                        <div class="navbar__item-link account">
+                            <img src="./assets/img/user_image.jpg" alt="User">
+                            <p style="width:auto;height: auto;padding: 0;margin:auto 5px;">Nguyễn Tấn Đạt</p>
+                            <div class="account-user"></div>
                         </div>
                     </li>
                 </ul>
@@ -92,7 +100,7 @@
                 </div>
                 <div class="search">
                     <div class="search-bar">
-                        <input type="text" placeholder="Nhập để tìm kiếm" class="search-bar__input">
+                        <input type="search" placeholder="Nhập để tìm kiếm" class="search-bar__input">
                         <button class="search-bar__submit">
                             <i class="fas fa-search"></i>
                         </button>
@@ -126,14 +134,28 @@
                             Nữ</a>
                     </div>
                 </div>
-                <div class="cart">
-                    <i class="fas fa-shopping-cart"></i>
-                    <div class="in-cart">
-                        <div class="in-cart__before"></div>
-                        <div class="in-cart__img">
-                            <img src="./assets/img/in_cart.png" alt="">
+                <div class="area-cart">
+                    <div class="cart">
+                        <i class="fas fa-shopping-cart"></i>
+                        <div class="cart-has-product__icon">&nbsp;333&nbsp;</div>
+                        <div class="in-cart">
+                            <div class="in-cart__before"></div>
+                            <div class="cart-empty">
+                                <div class="in-cart__img">
+                                    <img src="./assets/img/in_cart.png" alt="">
+                                </div>
+                                <p>Chưa có sản phẩm</p>
+                            </div>
+                            <div class="cart-has-product">
+                                <p>Danh sách sản phẩm</p>
+                                <ul class="product-list">
+                                    <li class="product__item">Product</li>
+                                    <li class="product__item">Product</li>
+                                    <li class="product__item">Product</li>
+                                </ul>
+                                <p class="show-all">Xem tất cả</p>
+                            </div>
                         </div>
-                        <p>Chưa có sản phẩm</p>
                     </div>
                 </div>
             </div>
@@ -145,12 +167,10 @@
     <footer class="footer">
 
     </footer>
-
     <!-- Modal layout -->
     <div class="modal">
         <div class="modal__body">
             <div class="modal__inner">
-
                 <!-- Register form -->
                 <div class="auth-form">
                     <div class="auth-form__container">
@@ -194,7 +214,7 @@
                         </a>
                     </div>
                 </div>
-                Login form
+                <!--Login form-->
                 <div class="auth-form">
                     <div class="auth-form__container">
                         <div class="auth-form__header">

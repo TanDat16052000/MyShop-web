@@ -94,7 +94,7 @@
                                     <li class="account-info__item">Đăng xuất</li>
                                 </ul>
                             </div>
-                            <img src="./assets/img/user_image.jpg" alt="User">
+                            <img src="./assets/img/account_img.png" alt="User">
                             <p class="account-info__username">Nguyễn Tấn Đạt</p>
                             <div class="account-user"></div>
                         </div>
@@ -109,7 +109,9 @@
                 </div>
                 <div class="search">
                     <div class="search-bar">
-                        <input type="search" placeholder="Nhập để tìm kiếm" class="search-bar__input">
+                        <label>
+                            <input type="search" placeholder="Nhập để tìm kiếm" class="search-bar__input">
+                        </label>
                         <button class="search-bar__submit">
                             <i class="fas fa-search"></i>
                         </button>
@@ -176,7 +178,9 @@
                 <div class="column-2">
                     <nav class="category">
                         <h3 class="category__label">
-                            <i class="fas fa-list-ul"></i> Danh mục</h3>
+                            <i class="fas fa-list-ul"></i>
+                            Danh mục
+                        </h3>
                         <ul class="category-list">
                             <li class="category-item">
                                 <a href="" class="category-item__link">Thiết bị điện tử</a>
@@ -205,10 +209,11 @@
                             <button class="btn">Bán chạy</button>
                             <div class="select-sort btn">
                                 <span class="select-sort__label">Giá</span>
-                                <select class="select-sort__input" name="value" id="">
+                                <label for=""><select class="select-sort__input" name="value" id="">
                                     <option>Thấp đến cao</option>
                                     <option>Cao đến thấp</option>
                                 </select>
+                                </label>
                             </div>
                         </div>
                         <div class="filter-right">
@@ -219,10 +224,13 @@
                     </div>
                     <div class="home-product">
                         <div class="grid__row">
+                            <!--Product -->
                             <div class="column-2-4">
-                                <div class="product">
+                                <a class="product">
                                     <div class="product__img"
-                                         style="background-image: url(./assets/img/product/product_t_shirt.jpg)"></div>
+                                         style="background-image: url(./assets/img/product/product_t_shirt.jpg)">
+                                        <img src="./assets/img/product/commercial.png" alt="syntax error">
+                                    </div>
                                     <h4 class="product-name">Áo thun WEARIT chất liệu cotton 100% kiểu dáng tay lỡ form
                                         rộng lonely but rich</h4>
                                     <div class="product__price">
@@ -252,21 +260,584 @@
                                         &nbsp;Yêu thích
                                     </div>
                                     <div class="product__sale-off">
+                                        <div class="after"></div>
                                         <span class="sale-off__percent">10%</span>
-                                        <span class="sale-off__label">Giảm giá</span>
+                                        <span class="sale-off__label">Giảm</span>
                                     </div>
-                                </div>
-
+                                </a>
+                            </div>
+                            <div class="column-2-4">
+                                <a class="product">
+                                    <div class="product__img"
+                                         style="background-image: url(./assets/img/product/product_t_shirt.jpg)">
+                                        <img src="./assets/img/product/commercial.png" alt="syntax error">
+                                    </div>
+                                    <h4 class="product-name">Áo thun WEARIT chất liệu cotton 100% kiểu dáng tay lỡ form
+                                        rộng lonely but rich</h4>
+                                    <div class="product__price">
+                                        <span class="product__price-old">1.200.000đ</span>
+                                        <span class="product__price-new">999.000đ</span>
+                                    </div>
+                                    <div class="product__action">
+                                        <div class="product__action-heart">
+                                            <i class="far fa-heart"></i>
+                                            <!--<i class="fas fa-heart"></i>-->
+                                        </div>
+                                        <div class="product__start">
+                                            <i class="fas fa-star gold"></i>
+                                            <i class="fas fa-star gold"></i>
+                                            <i class="fas fa-star gold"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <p class="product__sold">Đã bán 1,60k</p>
+                                    </div>
+                                    <div class="product__origin">
+                                        <span class="product__brand">Whoo</span>
+                                        <span class="product__origin-name">Nhật Bản</span>
+                                    </div>
+                                    <div class="product__favourite">
+                                        <i class="fas fa-check"></i>
+                                        &nbsp;Yêu thích
+                                    </div>
+                                    <div class="product__sale-off">
+                                        <div class="after"></div>
+                                        <span class="sale-off__percent">10%</span>
+                                        <span class="sale-off__label">Giảm</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="column-2-4">
+                                <a class="product">
+                                    <div class="product__img"
+                                         style="background-image: url(./assets/img/product/product_t_shirt.jpg)">
+                                        <img src="./assets/img/product/commercial.png" alt="syntax error">
+                                    </div>
+                                    <h4 class="product-name">Áo thun WEARIT chất liệu cotton 100% kiểu dáng tay lỡ form
+                                        rộng lonely but rich</h4>
+                                    <div class="product__price">
+                                        <span class="product__price-old">1.200.000đ</span>
+                                        <span class="product__price-new">999.000đ</span>
+                                    </div>
+                                    <div class="product__action">
+                                        <div class="product__action-heart">
+                                            <i class="far fa-heart"></i>
+                                            <!--<i class="fas fa-heart"></i>-->
+                                        </div>
+                                        <div class="product__start">
+                                            <i class="fas fa-star gold"></i>
+                                            <i class="fas fa-star gold"></i>
+                                            <i class="fas fa-star gold"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <p class="product__sold">Đã bán 1,60k</p>
+                                    </div>
+                                    <div class="product__origin">
+                                        <span class="product__brand">Whoo</span>
+                                        <span class="product__origin-name">Nhật Bản</span>
+                                    </div>
+                                    <div class="product__favourite">
+                                        <i class="fas fa-check"></i>
+                                        &nbsp;Yêu thích
+                                    </div>
+                                    <div class="product__sale-off">
+                                        <div class="after"></div>
+                                        <span class="sale-off__percent">10%</span>
+                                        <span class="sale-off__label">Giảm</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="column-2-4">
+                                <a class="product">
+                                    <div class="product__img"
+                                         style="background-image: url(./assets/img/product/product_t_shirt.jpg)">
+                                        <img src="./assets/img/product/commercial.png" alt="syntax error">
+                                    </div>
+                                    <h4 class="product-name">Áo thun WEARIT chất liệu cotton 100% kiểu dáng tay lỡ form
+                                        rộng lonely but rich</h4>
+                                    <div class="product__price">
+                                        <span class="product__price-old">1.200.000đ</span>
+                                        <span class="product__price-new">999.000đ</span>
+                                    </div>
+                                    <div class="product__action">
+                                        <div class="product__action-heart">
+                                            <i class="far fa-heart"></i>
+                                            <!--<i class="fas fa-heart"></i>-->
+                                        </div>
+                                        <div class="product__start">
+                                            <i class="fas fa-star gold"></i>
+                                            <i class="fas fa-star gold"></i>
+                                            <i class="fas fa-star gold"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <p class="product__sold">Đã bán 1,60k</p>
+                                    </div>
+                                    <div class="product__origin">
+                                        <span class="product__brand">Whoo</span>
+                                        <span class="product__origin-name">Nhật Bản</span>
+                                    </div>
+                                    <div class="product__favourite">
+                                        <i class="fas fa-check"></i>
+                                        &nbsp;Yêu thích
+                                    </div>
+                                    <div class="product__sale-off">
+                                        <div class="after"></div>
+                                        <span class="sale-off__percent">10%</span>
+                                        <span class="sale-off__label">Giảm</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="column-2-4">
+                                <a class="product">
+                                    <div class="product__img"
+                                         style="background-image: url(./assets/img/product/product_t_shirt.jpg)">
+                                        <img src="./assets/img/product/commercial.png" alt="syntax error">
+                                    </div>
+                                    <h4 class="product-name">Áo thun WEARIT chất liệu cotton 100% kiểu dáng tay lỡ form
+                                        rộng lonely but rich</h4>
+                                    <div class="product__price">
+                                        <span class="product__price-old">1.200.000đ</span>
+                                        <span class="product__price-new">999.000đ</span>
+                                    </div>
+                                    <div class="product__action">
+                                        <div class="product__action-heart">
+                                            <i class="far fa-heart"></i>
+                                            <!--<i class="fas fa-heart"></i>-->
+                                        </div>
+                                        <div class="product__start">
+                                            <i class="fas fa-star gold"></i>
+                                            <i class="fas fa-star gold"></i>
+                                            <i class="fas fa-star gold"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <p class="product__sold">Đã bán 1,60k</p>
+                                    </div>
+                                    <div class="product__origin">
+                                        <span class="product__brand">Whoo</span>
+                                        <span class="product__origin-name">Nhật Bản</span>
+                                    </div>
+                                    <div class="product__favourite">
+                                        <i class="fas fa-check"></i>
+                                        &nbsp;Yêu thích
+                                    </div>
+                                    <div class="product__sale-off">
+                                        <div class="after"></div>
+                                        <span class="sale-off__percent">10%</span>
+                                        <span class="sale-off__label">Giảm</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="column-2-4">
+                                <a class="product">
+                                    <div class="product__img"
+                                         style="background-image: url(./assets/img/product/product_t_shirt.jpg)">
+                                        <img src="./assets/img/product/commercial.png" alt="syntax error">
+                                    </div>
+                                    <h4 class="product-name">Áo thun WEARIT chất liệu cotton 100% kiểu dáng tay lỡ form
+                                        rộng lonely but rich</h4>
+                                    <div class="product__price">
+                                        <span class="product__price-old">1.200.000đ</span>
+                                        <span class="product__price-new">999.000đ</span>
+                                    </div>
+                                    <div class="product__action">
+                                        <div class="product__action-heart">
+                                            <i class="far fa-heart"></i>
+                                            <!--<i class="fas fa-heart"></i>-->
+                                        </div>
+                                        <div class="product__start">
+                                            <i class="fas fa-star gold"></i>
+                                            <i class="fas fa-star gold"></i>
+                                            <i class="fas fa-star gold"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <p class="product__sold">Đã bán 1,60k</p>
+                                    </div>
+                                    <div class="product__origin">
+                                        <span class="product__brand">Whoo</span>
+                                        <span class="product__origin-name">Nhật Bản</span>
+                                    </div>
+                                    <div class="product__favourite">
+                                        <i class="fas fa-check"></i>
+                                        &nbsp;Yêu thích
+                                    </div>
+                                    <div class="product__sale-off">
+                                        <div class="after"></div>
+                                        <span class="sale-off__percent">10%</span>
+                                        <span class="sale-off__label">Giảm</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="column-2-4">
+                                <a class="product">
+                                    <div class="product__img"
+                                         style="background-image: url(./assets/img/product/product_t_shirt.jpg)">
+                                        <img src="./assets/img/product/commercial.png" alt="syntax error">
+                                    </div>
+                                    <h4 class="product-name">Áo thun WEARIT chất liệu cotton 100% kiểu dáng tay lỡ form
+                                        rộng lonely but rich</h4>
+                                    <div class="product__price">
+                                        <span class="product__price-old">1.200.000đ</span>
+                                        <span class="product__price-new">999.000đ</span>
+                                    </div>
+                                    <div class="product__action">
+                                        <div class="product__action-heart">
+                                            <i class="far fa-heart"></i>
+                                            <!--<i class="fas fa-heart"></i>-->
+                                        </div>
+                                        <div class="product__start">
+                                            <i class="fas fa-star gold"></i>
+                                            <i class="fas fa-star gold"></i>
+                                            <i class="fas fa-star gold"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <p class="product__sold">Đã bán 1,60k</p>
+                                    </div>
+                                    <div class="product__origin">
+                                        <span class="product__brand">Whoo</span>
+                                        <span class="product__origin-name">Nhật Bản</span>
+                                    </div>
+                                    <div class="product__favourite">
+                                        <i class="fas fa-check"></i>
+                                        &nbsp;Yêu thích
+                                    </div>
+                                    <div class="product__sale-off">
+                                        <div class="after"></div>
+                                        <span class="sale-off__percent">10%</span>
+                                        <span class="sale-off__label">Giảm</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="column-2-4">
+                                <a class="product">
+                                    <div class="product__img"
+                                         style="background-image: url(./assets/img/product/product_t_shirt.jpg)">
+                                        <img src="./assets/img/product/commercial.png" alt="syntax error">
+                                    </div>
+                                    <h4 class="product-name">Áo thun WEARIT chất liệu cotton 100% kiểu dáng tay lỡ form
+                                        rộng lonely but rich</h4>
+                                    <div class="product__price">
+                                        <span class="product__price-old">1.200.000đ</span>
+                                        <span class="product__price-new">999.000đ</span>
+                                    </div>
+                                    <div class="product__action">
+                                        <div class="product__action-heart">
+                                            <i class="far fa-heart"></i>
+                                            <!--<i class="fas fa-heart"></i>-->
+                                        </div>
+                                        <div class="product__start">
+                                            <i class="fas fa-star gold"></i>
+                                            <i class="fas fa-star gold"></i>
+                                            <i class="fas fa-star gold"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <p class="product__sold">Đã bán 1,60k</p>
+                                    </div>
+                                    <div class="product__origin">
+                                        <span class="product__brand">Whoo</span>
+                                        <span class="product__origin-name">Nhật Bản</span>
+                                    </div>
+                                    <div class="product__favourite">
+                                        <i class="fas fa-check"></i>
+                                        &nbsp;Yêu thích
+                                    </div>
+                                    <div class="product__sale-off">
+                                        <div class="after"></div>
+                                        <span class="sale-off__percent">10%</span>
+                                        <span class="sale-off__label">Giảm</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="column-2-4">
+                                <a class="product">
+                                    <div class="product__img"
+                                         style="background-image: url(./assets/img/product/product_t_shirt.jpg)">
+                                        <img src="./assets/img/product/commercial.png" alt="syntax error">
+                                    </div>
+                                    <h4 class="product-name">Áo thun WEARIT chất liệu cotton 100% kiểu dáng tay lỡ form
+                                        rộng lonely but rich</h4>
+                                    <div class="product__price">
+                                        <span class="product__price-old">1.200.000đ</span>
+                                        <span class="product__price-new">999.000đ</span>
+                                    </div>
+                                    <div class="product__action">
+                                        <div class="product__action-heart">
+                                            <i class="far fa-heart"></i>
+                                            <!--<i class="fas fa-heart"></i>-->
+                                        </div>
+                                        <div class="product__start">
+                                            <i class="fas fa-star gold"></i>
+                                            <i class="fas fa-star gold"></i>
+                                            <i class="fas fa-star gold"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <p class="product__sold">Đã bán 1,60k</p>
+                                    </div>
+                                    <div class="product__origin">
+                                        <span class="product__brand">Whoo</span>
+                                        <span class="product__origin-name">Nhật Bản</span>
+                                    </div>
+                                    <div class="product__favourite">
+                                        <i class="fas fa-check"></i>
+                                        &nbsp;Yêu thích
+                                    </div>
+                                    <div class="product__sale-off">
+                                        <div class="after"></div>
+                                        <span class="sale-off__percent">10%</span>
+                                        <span class="sale-off__label">Giảm</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="column-2-4">
+                                <a class="product">
+                                    <div class="product__img"
+                                         style="background-image: url(./assets/img/product/product_t_shirt.jpg)">
+                                        <img src="./assets/img/product/commercial.png" alt="syntax error">
+                                    </div>
+                                    <h4 class="product-name">Áo thun WEARIT chất liệu cotton 100% kiểu dáng tay lỡ form
+                                        rộng lonely but rich</h4>
+                                    <div class="product__price">
+                                        <span class="product__price-old">1.200.000đ</span>
+                                        <span class="product__price-new">999.000đ</span>
+                                    </div>
+                                    <div class="product__action">
+                                        <div class="product__action-heart">
+                                            <i class="far fa-heart"></i>
+                                            <!--<i class="fas fa-heart"></i>-->
+                                        </div>
+                                        <div class="product__start">
+                                            <i class="fas fa-star gold"></i>
+                                            <i class="fas fa-star gold"></i>
+                                            <i class="fas fa-star gold"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <p class="product__sold">Đã bán 1,60k</p>
+                                    </div>
+                                    <div class="product__origin">
+                                        <span class="product__brand">Whoo</span>
+                                        <span class="product__origin-name">Nhật Bản</span>
+                                    </div>
+                                    <div class="product__favourite">
+                                        <i class="fas fa-check"></i>
+                                        &nbsp;Yêu thích
+                                    </div>
+                                    <div class="product__sale-off">
+                                        <div class="after"></div>
+                                        <span class="sale-off__percent">10%</span>
+                                        <span class="sale-off__label">Giảm</span>
+                                    </div>
+                                </a>
                             </div>
                         </div>
                     </div>
+                    <ul class="pagination-list">
+                        <li class="pagination">
+                            <a href="" class="pagination__link">
+                                <i class="fas fa-angle-left"></i>
+                            </a>
+                        </li>
+                        <li class="pagination">
+                            <a href="" class="pagination__link">1</a>
+                        </li>
+                        <li class="pagination">
+                            <a href="" class="pagination__link">2</a>
+                        </li>
+                        <li class="pagination">
+                            <a href="" class="pagination__link">...</a>
+                        </li>
+                        <li class="pagination">
+                            <a href="" class="pagination__link">9</a>
+                        </li>
+                        <li class="pagination">
+                            <a href="" class="pagination__link">10</a>
+                        </li>
+                        <li class="pagination">
+                            <a href="" class="pagination__link">
+                                <i class="fas fa-angle-right"></i>
+                            </a>
+                        </li>
+                    </ul>
                 </dib>
             </div>
         </div>
 
     </div>
     <footer class="footer">
-
+        <div class="grid">
+            <div class="grid__row">
+                <div class="column-2-4">
+                    <div class="footer-title">Chăm sóc khách hàng</div>
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a href="https://help.shopee.vn/vn/s" class="zDMeuq" title="">Trung tâm trợ giúp</a></li>
+                        <li class="footer__item"><a href="https://shopee.vn/blog" class="zDMeuq" title="">Shopee
+                            Blog</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="https://help.shopee.vn/vn/s/article/C%C3%A1c-c%C3%A2u-h%E1%BB%8Fi-li%C3%AAn-quan-%C4%91%E1%BA%BFn-SHOPEE-MALL"
+                               class="zDMeuq" title="">Shopee Mall</a></li>
+                        <li class="footer__item"><a
+                                href="https://help.shopee.vn/vn/s/article/H%C6%B0%E1%BB%9Bng-d%E1%BA%ABn-mua-h%C3%A0ng-t%E1%BA%A1i-Shopee-1542942315487"
+                                class="zDMeuq" title="">Hướng dẫn mua hàng</a></li>
+                        <li class="footer__item"><a
+                                href="https://help.shopee.vn/vn/s/article/L%C3%A0m-c%C3%A1ch-n%C3%A0o-%C4%91%E1%BB%83-b%E1%BA%AFt-%C4%91%E1%BA%A7u-%C4%91%C4%83ng-b%C3%A1n-tr%C3%AAn-Shopee-1542942317110"
+                                class="zDMeuq" title="">Hướng dẫn bán hàng</a></li>
+                        <li class="footer__item"><a
+                                href="https://help.shopee.vn/vn/s/topic/0TO6F000000QzBjWAK/thanh-to%C3%A1n"
+                                class="zDMeuq" title="">Thanh toán</a></li>
+                        <li class="footer__item"><a
+                                href="https://help.shopee.vn/vn/s/article/Shopee-Xu-l%C3%A0-g%C3%AC-1542942386643"
+                                class="zDMeuq" title="">Shopee Xu</a></li>
+                        <li class="footer__item"><a
+                                href="https://help.shopee.vn/vn/s/topic/0TO6F000000QzKWWA0/v%E1%BA%ADn-chuy%E1%BB%83n"
+                                class="zDMeuq" title="">Vận chuyển</a></li>
+                        <li class="footer__item"><a
+                                href="https://help.shopee.vn/vn/s/article/C%C3%A1c-c%C3%A2u-h%E1%BB%8Fi-li%C3%AAn-quan-%C4%91%E1%BA%BFn-Tr%E1%BA%A3-h%C3%A0ng-Ho%C3%A0n-ti%E1%BB%81n-1542942680526"
+                                class="zDMeuq" title="">Trả hàng &amp; Hoàn tiền</a></li>
+                        <li class="footer__item"><a href="https://help.shopee.vn/vn/s/contactus" class="zDMeuq"
+                                                    title="">Chăm
+                            sóc khách hàng</a></li>
+                        <li class="footer__item"><a
+                                href="https://help.shopee.vn/vn/s/article/CH%C3%8DNH-S%C3%81CH-B%E1%BA%A2O-H%C3%80NH-T%E1%BA%A0I-SHOPEE-1542942563283"
+                                class="zDMeuq" title="">Chính sách bảo hành</a></li>
+                    </ul>
+                </div>
+                <div class="column-2-4">
+                    <div class="footer-title">Về Shopee</div>
+                    <ul class="footer__list">
+                        <li class="footer__item"><a href="https://careers.shopee.com/about/" class="zDMeuq" title="">Giới
+                            thiệu về Shopee Việt Nam</a></li>
+                        <li class="footer__item"><a href="https://careers.shopee.com/jobs" class="zDMeuq" title="">Tuyển
+                            dụng</a></li>
+                        <li class="footer__item"><a href="https://shopee.vn/legaldoc/policies/" class="zDMeuq" title="">Điều
+                            Khoản Shopee</a></li>
+                        <li class="footer__item"><a href="https://shopee.vn/docs/3603" class="zDMeuq" title="">Chính
+                            sách
+                            bảo mật</a></li>
+                        <li class="footer__item"><a href="https://shopee.vn/mall/" class="zDMeuq" title="">Chính
+                            Hãng</a>
+                        </li>
+                        <li class="footer__item"><a href="https://banhang.shopee.vn/" class="zDMeuq" title="">Kênh Người
+                            bán</a></li>
+                        <li class="footer__item"><a href="https://shopee.vn/flash_sale/" class="zDMeuq" title="">Flash
+                            Sales</a></li>
+                        <li class="footer__item"><a href="https://shopee.vn/affiliate/" class="zDMeuq" title="">Chương
+                            trình Tiếp thị liên kết Shopee</a></li>
+                        <li class="footer__item"><a href="mailto:media.vn%40shopee.com" class="zDMeuq"
+                                                    title="media.vn@shopee.com">Liên Hệ Với Truyền Thông</a></li>
+                    </ul>
+                </div>
+                <div class="column-2-4">
+                    <div class="footer-title">Thanh toán</div>
+                    <ul class="S2L_LN _2cEKAG">
+                        <li class="lHnHFY">
+                            <div class="footer-vn-background footer-vn-visa-png"
+                                 style="width: 55px; height: 18px;"></div>
+                        </li>
+                        <li class="lHnHFY">
+                            <div class="footer-vn-background footer-vn-mastercard-png"
+                                 style="width: 55px; height: 29px;"></div>
+                        </li>
+                        <li class="lHnHFY">
+                            <div class="footer-vn-background footer-vn-jcb-png"
+                                 style="width: 55px; height: 23px;"></div>
+                        </li>
+                        <li class="lHnHFY">
+                            <div class="footer-vn-background footer-vn-amex-png"
+                                 style="width: 55px; height: 24px;"></div>
+                        </li>
+                        <li class="lHnHFY">
+                            <div class="footer-vn-background footer-vn-vn_cod_footer-png"
+                                 style="width: 50px; height: 29px;"></div>
+                        </li>
+                        <li class="lHnHFY">
+                            <div class="footer-vn-background footer-vn-vn_installment_footer-png"
+                                 style="width: 55px; height: 29px;"></div>
+                        </li>
+                        <li class="lHnHFY">
+                            <div class="footer-vn-background footer-vn-air-pay-png"
+                                 style="width: 23px; height: 29px;"></div>
+                        </li>
+                    </ul>
+                    <div class="footer-title _1672qx">Đơn vị vận chuyển</div>
+                    <ul class="S2L_LN _2cEKAG">
+                        <li class="lHnHFY">
+                            <div class="footer-vn-background footer-vn-shopee-express-png"
+                                 style="width: 55px; height: 10px;"></div>
+                        </li>
+                        <li class="lHnHFY">
+                            <div class="footer-vn-background footer-vn-ghtk-png"
+                                 style="width: 55px; height: 18px;"></div>
+                        </li>
+                        <li class="lHnHFY">
+                            <div class="footer-vn-background footer-vn-ghn-png"
+                                 style="width: 55px; height: 29px;"></div>
+                        </li>
+                        <li class="lHnHFY">
+                            <div class="footer-vn-background footer-vn-viettel_post-png"
+                                 style="width: 55px; height: 40px;"></div>
+                        </li>
+                        <li class="lHnHFY">
+                            <div class="footer-vn-background footer-vn-vnpost-png"
+                                 style="width: 55px; height: 27px;"></div>
+                        </li>
+                        <li class="lHnHFY">
+                            <div class="footer-vn-background footer-vn-vn_jnt_footer-png"
+                                 style="width: 55px; height: 16px;"></div>
+                        </li>
+                        <li class="lHnHFY">
+                            <div class="footer-vn-background footer-vn-grab_express-png"
+                                 style="width: 55px; height: 15px;"></div>
+                        </li>
+                        <li class="lHnHFY">
+                            <div class="footer-vn-background footer-vn-vn_now-png"
+                                 style="width: 38px; height: 32px;"></div>
+                        </li>
+                        <li class="lHnHFY">
+                            <div class="footer-vn-background footer-vn-ninja-van-png"
+                                 style="width: 50px; height: 20px;"></div>
+                        </li>
+                        <li class="lHnHFY">
+                            <div class="footer-vn-background footer-vn-best-express-png"
+                                 style="width: 55px; height: 22px;"></div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="column-2-4">
+                    <div class="footer-title">Theo dõi chúng tôi trên</div>
+                    <ul class="footer__list">
+                        <li class="footer__item"><a href="https://www.facebook.com/ShopeeVN" class="zDMeuq" title="">
+                            <div class="footer-vn-background footer-vn-f-png _23bPp9"></div>
+                            Facebook</a></li>
+                        <li class="footer__item"><a href="https://www.instagram.com/Shopee_VN" class="zDMeuq" title="">
+                            <div class="footer-vn-background footer-vn-ins-png _23bPp9"></div>
+                            Instagram</a></li>
+                        <li class="footer__item"><a href="https://www.linkedin.com/company/shopee" class="zDMeuq"
+                                                    title="">
+                            <div class="footer-vn-background footer-vn-lin-png _23bPp9"></div>
+                            LinkedIn</a></li>
+                    </ul>
+                </div>
+                <div class="column-2-4">
+                    <div class="footer-title">Tải ứng dụng Shopee ngay thôi</div>
+                    <a class="footer__item-qr" href="/web/" target="_blank" rel="noopener noreferrer">
+                        <img class="qr__item" src="./assets/img/qr.png" alt="QR code" class="qr__img-qr">
+                        <div class="qr__item">
+                            <img class="qr-app__app-store" src="./assets/img/appstore.png" alt="App Store">
+                            <img class="qr-app__google" src="./assets/img/googleplay.png" alt="Google Play">
+                            <img class="qr-app__huawei" src="./assets/img/huawei.png" alt="Huawei">
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
     </footer>
     <!-- Modal layout -->
     <div class="modal">
@@ -281,14 +852,20 @@
                         </div>
                         <div class="auth-form__form">
                             <div class="auth-form__group">
-                                <input type="text" class="auth-form__input" placeholder="Email">
+                                <label>
+                                    <input type="text" class="auth-form__input" placeholder="Email">
+                                </label>
                             </div>
 
                             <div class="auth-form__group">
-                                <input type="password" class="auth-form__input" placeholder="Mật khẩu">
+                                <label>
+                                    <input type="password" class="auth-form__input" placeholder="Mật khẩu">
+                                </label>
                             </div>
                             <div class="auth-form__group">
-                                <input type="password" class="auth-form__input" placeholder="Nhập lại mật khẩu">
+                                <label>
+                                    <input type="password" class="auth-form__input" placeholder="Nhập lại mật khẩu">
+                                </label>
                             </div>
 
                             <div class="auth-form__aside">
@@ -324,11 +901,15 @@
                         </div>
                         <div class="auth-form__form">
                             <div class="auth-form__group">
-                                <input type="text" class="auth-form__input" placeholder="Email">
+                                <label>
+                                    <input type="text" class="auth-form__input" placeholder="Email">
+                                </label>
                             </div>
 
                             <div class="auth-form__group">
-                                <input type="password" class="auth-form__input" placeholder="Mật khẩu">
+                                <label>
+                                    <input type="password" class="auth-form__input" placeholder="Mật khẩu">
+                                </label>
                             </div>
 
                             <div class="auth-form__aside">

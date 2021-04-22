@@ -808,7 +808,8 @@ readers do not read off random characters that represent icons */
   content: "\f6be"; }
 
 .fa-cc-amazon-pay:before {
-  content: "\f42d"; }
+  content: "\f42d";
+color:#82c91e;}
 
 .fa-cc-amex:before {
   content: "\f1f3"; }
@@ -823,19 +824,25 @@ readers do not read off random characters that represent icons */
   content: "\f1f2"; }
 
 .fa-cc-jcb:before {
-  content: "\f24b"; }
+  content: "\f24b";
+  color:#15aabf;}
 
 .fa-cc-mastercard:before {
-  content: "\f1f1"; }
+  content: "\f1f1";
+  color:#fd7e14;
+}
 
 .fa-cc-paypal:before {
-  content: "\f1f4"; }
+  content: "\f1f4";
+  color:#4c6ef5;
+}
 
 .fa-cc-stripe:before {
   content: "\f1f5"; }
 
 .fa-cc-visa:before {
-  content: "\f1f0"; }
+  content: "\f1f0";
+  color: #125999;}
 
 .fa-centercode:before {
   content: "\f380"; }

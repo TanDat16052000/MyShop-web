@@ -1526,7 +1526,9 @@ color:#82c91e;}
   content: "\f070"; }
 
 .fa-facebook:before {
-  content: "\f09a"; }
+  content: "\f09a";
+  color:#3b5998;
+}
 
 .fa-facebook-f:before {
   content: "\f39e"; }
@@ -2321,7 +2323,9 @@ color:#82c91e;}
   content: "\e080"; }
 
 .fa-instagram:before {
-  content: "\f16d"; }
+  content: "\f16d";
+  color:#fbad50;
+}
 
 .fa-instagram-square:before {
   content: "\e055"; }
